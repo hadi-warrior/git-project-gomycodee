@@ -1,0 +1,356 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+  }
+  body {
+    font-family: Roboto, Helvetica, sans-serif;
+    height: 100vh;
+    background-color: #0c779e8a;
+
+
+  }
+  nav {
+    background-color: #fff;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+  }
+  li {
+    padding: 20px;
+  }
+  li:hover {
+    background-color: rgb(222, 222, 222);
+  }
+  li:first-child {
+      margin-right: auto;
+  }
+  nav{
+   background-color: #CCCCCC;
+  }
+header video {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+header h1 {
+    color: #f1f1f1;
+    font-weight: 800;
+    font-size: 92px;
+    text-shadow: 2px 2px 0px #111;
+    text-transform: uppercase;
+    text-align: center;
+}
+.services-link {
+    color: #eee;
+    font-size: 20px;
+}
+
+
+section p {
+    line-height: 1.4;
+    font-size: 18px;
+}
+#results,
+.car_description {
+    width: 65vw;
+}
+
+#results span {
+    font-size: 1.5rem;
+}
+
+#results select {
+    border: 1px solid rgba(189, 195, 199, 0.6);
+    border-radius: 10%;
+    background-color: rgb(240, 242, 243);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: center;
+    padding: 0.4rem 1rem;
+}
+
+.car_description {
+    padding: 3rem 0;
+    border-bottom: 1px solid rgba(127,140,141,0.1);
+}
+
+.arrow_left {
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid black;
+    cursor: pointer;
+
+}
+
+.arrow_rigth {
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid black;
+    cursor: pointer;
+}
+
+.car_description > div:nth-of-type(1) {
+    margin-right: 3rem;
+    width: 50%;
+}
+
+.img_outer {
+    overflow: hidden;
+    width: 70%;
+}
+
+.img_container {
+    position: relative;
+}
+
+.img_outer img {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.car_description h3,
+.car_description p {
+    line-height: 1.5rem;
+}
+
+.car_description button {
+    background-color: rgba(70, 157, 70, 1);
+    padding: 0.4rem;
+    color: white;
+    border-radius: 10%;
+    border: 0.4mm ridge rgba(0,0,0,0.6);
+}
+
+/* FOOTER */
+
+footer img {
+    width: 100px;
+    margin-right: 1rem;
+}
+
+
+#scrolling_menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 8vh;
+    width: 100%;
+    background-color: white;
+}
+
+#scrolling_menu ul li {
+    padding: 0.4rem;
+}
+
+#scrolling_menu ul li a {
+    color: rgba(45, 52, 54, 1);
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+.toBeFaded {
+    display: none;
+}
+
+/* RWD */
+
+/* SmartPhones */
+
+@media screen and (max-width : 575.98px) {
+
+
+    #rental_form,
+    #results,
+    .car_description {
+        width: 90vw;
+    }
+
+
+    #header_renting_part {
+        justify-content: space-around;
+    }
+
+    #rental_form #pickup_part select ,
+    #rental_form #pickup_part input {
+        margin: 0;
+        width: 100%;
+    }
+
+    #rental_form #pickup_part input:nth-of-type(1) {
+        margin: 0.4rem 0;
+    }
+
+    .img_outer {
+        width: 80%;
+    }
+
+}
+
+/* Tablets and SmartPhones */
+
+@media screen and (max-width : 991.98px) {
+
+
+    #rental_form {
+        flex-direction: column;
+    }
+
+    #pickup_part {
+        padding: 0.4rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #pickup_part,
+    #submitPart {
+        width: 100%;
+    }
+
+    #submitPart input {
+        padding: 0.5rem;
+    }
+    
+    #results select {
+        position: relative;
+        top: 20px;
+    }
+
+    .car_details h3,
+    .car_details p {
+        display: none;
+    }
+
+    .car_description {
+        justify-content: space-between;
+    }
+
+    .car_description > div:nth-of-type(1) {
+        width: 70%;
+        margin-right: 0;
+    }
+    
+}
+
+/* Tablets */
+
+@media screen and (min-width : 575.99px) and (max-width : 991.98px) {
+
+
+    #rental_form,
+    #results,
+    .car_description {
+        width: 80vw;
+    }
+
+
+    #rental_form #pickup_part select ,
+    #rental_form #pickup_part input {
+        margin: 0;
+        width: 32.5%;
+    }
+
+
+
+}
+main{
+  padding-top: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  display: grid;
+  justify-content: end;
+  align-items: end;
+  min-height: 100vh;
+  background: #e8e8e8;
+  padding: 50px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 50px 100px;
+  background: #fff;
+}
+footer .container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+footer .container .sec h2 {
+  position: relative;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+footer .container .sec p {
+  color: #555;
+}
+footer .container .sci {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+}
+footer .container .sci li {
+  list-style: none;
+}
+footer .container .sci li a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background: #333;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+}
+footer .container .sci li a i {
+  color: #fff;
+  font-size: 20px;
+}
+footer .container .quicklinks {
+  position: relative;
+}
+footer .container .quicklinks  ul {
+  list-style: none;
+}
+
+footer .container .quicklinks ul li a {
+  color: #555;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+footer .container .contact .info {
+  position: relative;
+}
+footer .container .contact .info li {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  margin-bottom: 16px;
+}
+footer .container .contact .info li span {
+  color: #555;
+  font-size: 20px;
+}
+footer .container .contact .info li a {
+  color: #555;
+  text-decoration: none;
+}
+
+
