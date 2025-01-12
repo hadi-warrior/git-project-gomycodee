@@ -8,14 +8,48 @@
 </head>
 <body>
     <header>
-    <nav>
-        <ul>
-          <li>voitures</li>
-          <u><li>aceuille</li></u>
-          <a href="http://127.0.0.1:5501/html/about.html"><li>histoir</li></a>
-          <a href=""><li>contact</li></a>
-        </ul>
-    </nav>
+        <nav>
+            <div class="nav-container">
+                <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                    Sadji <span>El hadi</span>
+                </div>
+                <div class="links">
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Skills</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Services</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+            <div class="dropdown">
+                <div class="links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Skills</a>
+                    <a href="#">Service</a>
+                    <a href="#">Contact</a>
+                    <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+                </div>
+            </div>
+        </nav>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <div id="sideimg">
+            <img src="image/2.png" alt="">
+        </div>
+        <div id="content">
+            <h2>NOS VOITURES</h2>
+            <p class="lorem"><strong>
+                Trouvez au sein de nos agences <br> des maques de voitures<br>
+                qui vous conviennent </strong>
+            </p>
+            <button class="explo">EXPLORER</button>
+        </div>
+
+
     <div class="overlay"></div>
     <video autoplay muted loop>
         <source src="../videos/voiture electrique.mp4" type="video/mp4">
@@ -26,13 +60,11 @@
      <!-- CARS -->
 
         <!-- CAR 1 -->
-        <div class="car_description flex align-center">
+       
             <!-- LEFT PART -->
-            <div class="flex align-center">
+            
                 <!-- LEFT ARROW -->
-                <div class="arrow_left"></div>
-                <div class="img_outer">
-                    <div class="img_container flex" style="left:0%">
+                
                         <img class="active" src="../images/first.jpeg" alt="First vehicule">
                     </div>
                 </div>
@@ -42,10 +74,8 @@
 
             <!-- RIGHT PART -->
             <div class="car_details">
-                <h3>Peugeot 208</h3>
+                <h3>jj</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing</p>
-                <p>999 € - Paris Agency</p>
-                <button>Rent and Pay</button>
             </div>
         </div>
 
